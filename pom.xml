@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.hengtianjf.parent</groupId>
+    <artifactId>parent</artifactId>
+    <version>5.0.1</version>
+  </parent>
+  <groupId>com.chtwm.component</groupId>
+  <artifactId>jwt-helper</artifactId>
+  <version>1.2-20180808-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+
+  <properties>
+    <java-jwt>3.3.0</java-jwt>
+    <jsonwebtoken.jjwt>0.9.0</jsonwebtoken.jjwt>
+    <alibaba.fastjson>1.2.47</alibaba.fastjson>
+    <apache.commons-lang3>3.7</apache.commons-lang3>
+    <slf4j.version>1.6.4</slf4j.version>
+    <junit.version>4.12</junit.version>
+    <apache.commons-codec>1.11</apache.commons-codec>
+  </properties>
+
+  <dependencies>
+    <!--jwt依赖包-->
+    <dependency>
+      <groupId>com.auth0</groupId>
+      <artifactId>java-jwt</artifactId>
+      <version>${java-jwt}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt</artifactId>
+      <version>${jsonwebtoken.jjwt}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>${alibaba.fastjson}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>${apache.commons-lang3}</version>
+    </dependency>
+
+    <!--日志-->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>${slf4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <!-- 单元测试 -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <!--Apache Commons Codec-->
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>${apache.commons-codec}</version>
+    </dependency>
+  </dependencies>
+</project>
